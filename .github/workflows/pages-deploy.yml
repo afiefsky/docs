@@ -10,6 +10,9 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write   # Add this to give GitHub Actions the necessary write access
+
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v3
